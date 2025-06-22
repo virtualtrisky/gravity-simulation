@@ -1,6 +1,6 @@
-build/main: src/main.cpp
+build: clean
 	mkdir -p build
-	g++ -o build/main src/main.cpp -lraylib
+	g++ -g -O3 -o build/program src/main.cpp -lraylib
 
 clean:
 	rm -rf build

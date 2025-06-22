@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "/home/ky2144/Área de trabalho/Projetos/gravity-simulation/src/engine",
+      "program": "/home/ky2144/Área de trabalho/Projetos/gravity-simulation/src/engine/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
@@ -19,6 +19,19 @@
           "ignoreFailures": true
         }
       ]
+    },
+    {
+      "name": "Run program",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": ".",
+      "program": "${workspaceFolder}/build/program",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "preLaunchTask": "Build program"
     }
   ]
 }

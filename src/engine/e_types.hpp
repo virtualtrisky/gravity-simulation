@@ -1,14 +1,19 @@
 #ifndef _ENGINE_TYPES_HPP
 #define _ENGINE_TYPES_HPP
 
+#include <vector>
+#include <memory>
+
+//const double G = 6.6743e-11;
+
 typedef const char* cstr_; // C-style string type
 
 
 struct vec2 {
-    float x;
-    float y;
+    double x;
+    double y;
 
-    vec2(float x = 0.0f, float y = 0.0f) : x(x), y(y) {}
+    vec2(double x = 0.0f, double y = 0.0f) : x(x), y(y) {}
 
     vec2 operator+(const vec2& other) const {
         return vec2(x + other.x, y + other.y);
